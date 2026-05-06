@@ -6,32 +6,33 @@ A scalable and secure backend for a Spotify-like music streaming application, bu
 
 ## 🚀 Features
 
-- JWT Authentication (Login / Register / Protected Routes)
-- User Management System
-- Music / Songs API
-- Playlist Management
-- Like / Favorite System
-- Search Functionality
-- RESTful API Design
-- Clean MVCR Architecture
-- MongoDB Integration (Mongoose)
+* JWT Authentication (Login / Register / Protected Routes)
+* User Management System
+* Music / Songs API
+* Playlist Management
+* Like / Favorite System
+* Search Functionality
+* RESTful API Design
+* Clean MVCR Architecture
+* MongoDB Integration (Mongoose)
 
 ---
 
 ## 🏗️ Tech Stack
 
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JSON Web Token (JWT)
-- bcrypt.js
-- dotenv
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JSON Web Token (JWT)
+* bcrypt.js
+* dotenv
 
 ---
 
 ## 📁 Folder Structure (MVCR Pattern)
 
+```bash
 backend/
 │
 ├── src/
@@ -45,16 +46,19 @@ backend/
 ├── .env
 ├── package.json
 └── server.js
+```
 
 ---
 
 ## 🔐 Authentication (JWT)
 
-- Uses JSON Web Tokens for secure authentication
-- Token is generated on login/signup
-- Protected routes require token in headers:
+* Uses JSON Web Tokens for secure authentication
+* Token is generated on login/signup
+* Protected routes require token in headers:
 
+```bash
 Authorization: Bearer <your_token>
+```
 
 ---
 
@@ -62,56 +66,78 @@ Authorization: Bearer <your_token>
 
 ### 1. Clone the repository
 
+```bash
 git clone https://github.com/zohaibimtiaz472007/spotifyClone.git
 cd spotifyClone
+```
 
 ### 2. Install dependencies
 
+```bash
 npm install
+```
 
 ### 3. Setup environment variables
 
 Create a `.env` file in the root directory and add:
 
-PORT=3000  
-MONGO_URI=your_mongodb_connection_string  
-JWT_SECRET=your_secret_key  
+```env
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
 ### 4. Run the server
 
+```bash
 npm run dev
+```
 
 or
 
+```bash
 npm start
+```
 
 ---
 
 ## 📡 API Endpoints (Sample)
 
 ### Auth Routes
-POST   /api/auth/register  
-POST   /api/auth/login  
+
+```bash
+POST   /api/auth/register
+POST   /api/auth/login
 POST   /api/auth/logout
+```
 
 ### User Routes
-GET    /api/users/profile  
+
+```bash
+GET    /api/users/profile
+```
 
 ### Music Routes
-POST    /api/upload  
-GET   /  
+
+```bash
+POST   /api/upload
+GET    /
+```
 
 ### Playlist Routes
-POST   /api/album  
-GET    /api/albumId/:id  
+
+```bash
+POST   /api/album
+GET    /api/albumId/:id
+```
 
 ---
 
 ## 🛡️ Middleware
 
-- Auth Middleware → Verifies JWT token
-- Error Handler → Centralized error handling
-- Async Wrapper → Cleaner async/await handling
+* Auth Middleware → Verifies JWT token
+* Error Handler → Centralized error handling
+* Async Wrapper → Cleaner async/await handling
 
 ---
 
@@ -119,32 +145,30 @@ GET    /api/albumId/:id
 
 You can test APIs using:
 
-- Postman
-- Thunder Client
-- Insomnia
+* Postman
+* Thunder Client
+* Insomnia
 
 ---
 
 ## 🌟 Future Improvements
 
-- Audio streaming support
-- Recommendation system
-- Analytics dashboard
-- Cloud storage integration
-- Mobile app support
+* Audio streaming support
+* Recommendation system
+* Analytics dashboard
+* Cloud storage integration
+* Mobile app support
 
 ---
 
 ## 📌 Notes
 
-- This is a backend-only project
-- Designed to connect with a React frontend
-- Built with scalability and clean architecture in mind
+* This is a backend-only project
+* Designed to connect with a React frontend
+* Built with scalability and clean architecture in mind
 
 ---
 
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, open an issue first.
-
----
